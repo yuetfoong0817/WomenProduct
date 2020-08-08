@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Background"
     tools:context=".women1">
 
     <ScrollView
@@ -38,6 +39,8 @@
             <TextView
                 android:id="@+id/product_nameWomen1"
                 android:text="Adidas Cropped Hoodie"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="#4A1868"
                 android:layout_width="272dp"
                 android:layout_height="37dp"
                 android:layout_marginStart="16dp"
@@ -46,7 +49,7 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp"
-                android:textSize="24sp"
+                android:textSize="28sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -54,9 +57,9 @@
                 app:layout_constraintTop_toBottomOf="@+id/productImageWomen1"
                 app:layout_constraintVertical_bias="0.0" />
             <!--price-->
+
             <TextView
                 android:id="@+id/product_priceWomen1"
-                android:text="RM100"
                 android:layout_width="272dp"
                 android:layout_height="37dp"
                 android:layout_marginStart="16dp"
@@ -65,6 +68,9 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="RM100"
+                android:textColor="#4A1868"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -87,15 +93,18 @@
                 app:layout_constraintTop_toBottomOf="@+id/productImageWomen1"
                 app:layout_constraintVertical_bias="0.0" />
             <!--Description Title-->
+
             <TextView
                 android:id="@+id/product_textWomen1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:fontFamily="casual"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="#6A4D7C"
                 android:text="Description"
-                android:textSize="30sp"
-                app:layout_constraintHorizontal_bias="0.0"
+                android:textSize="24sp"
+                app:layout_constraintHorizontal_bias="0.019"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/product_priceWomen1" />
@@ -119,7 +128,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:fontFamily="casual"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="#6A4D7C"
                 android:text="Product Image"
                 android:textSize="30sp"
                 app:layout_constraintHorizontal_bias="0.0"
@@ -162,22 +172,23 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@id/list_scrollView"
+        android:background="@color/colorPrimary"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/add_wish_list"
-            android:layout_width="190dp"
+            android:layout_width="205dp"
             android:layout_height="50dp"
-            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"
             android:text="Add to Wish List" />
 
         <Button
             android:id="@+id/add_cart"
-            android:layout_width="190dp"
+            android:layout_width="205dp"
             android:layout_height="50dp"
-            android:layout_margin="10dp"
+            android:textColor="@color/colorPrimary"
             android:text="Add to Cart" />
     </LinearLayout>
 </RelativeLayout>
